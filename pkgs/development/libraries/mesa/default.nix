@@ -27,7 +27,7 @@
 with stdenv.lib;
 
 let
-  version = "19.3.3";
+  version = "20.0.0";
   branch  = versions.major version;
 in
 
@@ -42,7 +42,7 @@ stdenv.mkDerivation {
       "ftp://ftp.freedesktop.org/pub/mesa/older-versions/${branch}.x/${version}/mesa-${version}.tar.xz"
       "https://mesa.freedesktop.org/archive/mesa-${version}.tar.xz"
     ];
-    sha256 = "02czqdqf64i3az5p1allnxycyjad3x35cj0hz0017mi5pc84ikl1";
+    sha256 = "0d2bs2z3njzzmyswp2jf27y1bq9svpkks2q0shv2b3b09gjv6vdv";
   };
 
   prePatch = "patchShebangs .";
